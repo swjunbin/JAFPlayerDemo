@@ -167,15 +167,9 @@
     
     UIPanGestureRecognizer *pan_content = [[UIPanGestureRecognizer alloc] initWithTarget:self action:@selector(didPan:)];
     [self.playContentView addGestureRecognizer:pan_content];
-    
-    //addColor
-    self.player.currentPlayerManager.view.backgroundColor = [UIColor clearColor];
-    self.controlView.backgroundColor = [UIColor clearColor];
-    self.controlView.portraitControlView.backgroundColor = [UIColor clearColor];
-    self.controlView.effectView.backgroundColor = [UIColor clearColor];
-    self.controlView.coverImageView.backgroundColor = [UIColor clearColor];
-    self.controlView.bgImgView.backgroundColor = [UIColor clearColor];
     self.containerView.backgroundColor = [UIColor clearColor];
+    self.controlView.backgroundColor = [UIColor clearColor];
+    
 }
 
 #pragma mark - Animation

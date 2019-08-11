@@ -39,7 +39,7 @@
     self.imageView = iv;
     iv.image = [UIImage imageNamed:@"test.jpg"];
     
-    UIImage* newImage = [self getVideoThumbnailWithUrl:[NSURL URLWithString:@"https://vodsoumffti.vod.126.net/vodsoumffti/8OFMJoHV_2524060764_hd.mp4"] second:1];
+    UIImage* newImage = [self getVideoThumbnailWithUrl:[NSURL URLWithString:@"http://aliuwmp3.changba.com/userdata/video/45F6BD5E445E4C029C33DC5901307461.mp4"] second:1];
     iv.frame = CGRectMake(20, 100, 200, 200*(newImage.size.height/newImage.size.width));
     iv.image = newImage;
 }
@@ -55,7 +55,7 @@
     
     //@"https://vodsoumffti.vod.126.net/vodsoumffti/8OFMJoHV_2524060764_hd.mp4"
     //@"http://aliuwmp3.changba.com/userdata/video/45F6BD5E445E4C029C33DC5901307461.mp4"
-    NSString* url = @"https://vodsoumffti.vod.126.net/vodsoumffti/8OFMJoHV_2524060764_hd.mp4";
+    NSString* url = @"http://aliuwmp3.changba.com/userdata/video/45F6BD5E445E4C029C33DC5901307461.mp4";
     JAFPlayerViewController* vc = [JAFPlayerViewController playerWithVideoUrl:url SourceImageView:self.imageView];
     [vc showFromViewController:self];
     
