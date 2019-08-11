@@ -12,6 +12,7 @@ target 'JAFPlayerDemo' do
   pod 'ZFPlayer/ControlView', '~> 3.0'
   pod 'ZFPlayer/AVPlayer', '~> 3.0'
   pod 'KTVHTTPCache', '~> 2.0.0'
+  pod 'AFNetworking', '~> 3.0'
 
   target 'JAFPlayerDemoTests' do
     inherit! :search_paths

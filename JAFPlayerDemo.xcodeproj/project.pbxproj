@@ -17,6 +17,8 @@
 		CA1F9AB422FE78B40093C1AC /* JAFPlayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1F9AB322FE78B40093C1AC /* JAFPlayerDemoTests.m */; };
 		CA1F9ABF22FE78B40093C1AC /* JAFPlayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1F9ABE22FE78B40093C1AC /* JAFPlayerDemoUITests.m */; };
 		CA1F9ACF22FE96570093C1AC /* JAFPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1F9ACE22FE96570093C1AC /* JAFPlayerViewController.m */; };
+		CA2BBDB52300313C007EFB8C /* SDBaseProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2BBDB12300313C007EFB8C /* SDBaseProgressView.m */; };
+		CA2BBDB62300313C007EFB8C /* SDTransparentPieProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = CA2BBDB42300313C007EFB8C /* SDTransparentPieProgressView.m */; };
 		CA88D02622FED670001DDD01 /* JAFPlayerPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = CA88D02522FED670001DDD01 /* JAFPlayerPlay.png */; };
 		CA88D02822FED6DB001DDD01 /* JAFPlayerClose.png in Resources */ = {isa = PBXBuildFile; fileRef = CA88D02722FED6DB001DDD01 /* JAFPlayerClose.png */; };
 		CA88D02A22FED932001DDD01 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA88D02922FED932001DDD01 /* test.jpg */; };
@@ -71,6 +73,10 @@
 		CA1F9AC022FE78B40093C1AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CA1F9ACD22FE96570093C1AC /* JAFPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAFPlayerViewController.h; sourceTree = "<group>"; };
 		CA1F9ACE22FE96570093C1AC /* JAFPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAFPlayerViewController.m; sourceTree = "<group>"; };
+		CA2BBDB12300313C007EFB8C /* SDBaseProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDBaseProgressView.m; sourceTree = "<group>"; };
+		CA2BBDB22300313C007EFB8C /* SDBaseProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDBaseProgressView.h; sourceTree = "<group>"; };
+		CA2BBDB32300313C007EFB8C /* SDTransparentPieProgressView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SDTransparentPieProgressView.h; sourceTree = "<group>"; };
+		CA2BBDB42300313C007EFB8C /* SDTransparentPieProgressView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SDTransparentPieProgressView.m; sourceTree = "<group>"; };
 		CA88D02522FED670001DDD01 /* JAFPlayerPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JAFPlayerPlay.png; sourceTree = "<group>"; };
 		CA88D02722FED6DB001DDD01 /* JAFPlayerClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JAFPlayerClose.png; sourceTree = "<group>"; };
 		CA88D02922FED932001DDD01 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
@@ -198,6 +204,7 @@
 		CA1F9ACC22FE96410093C1AC /* JAFPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				CA2BBDB0230030CA007EFB8C /* SDProgress */,
 				CA88D02722FED6DB001DDD01 /* JAFPlayerClose.png */,
 				CA88D02522FED670001DDD01 /* JAFPlayerPlay.png */,
 				CA1F9ACD22FE96570093C1AC /* JAFPlayerViewController.h */,
@@ -206,6 +213,17 @@
 				CA88D03022FFA4F7001DDD01 /* JAFPlayerCacheManager.m */,
 			);
 			path = JAFPlayer;
+			sourceTree = "<group>";
+		};
+		CA2BBDB0230030CA007EFB8C /* SDProgress */ = {
+			isa = PBXGroup;
+			children = (
+				CA2BBDB22300313C007EFB8C /* SDBaseProgressView.h */,
+				CA2BBDB12300313C007EFB8C /* SDBaseProgressView.m */,
+				CA2BBDB32300313C007EFB8C /* SDTransparentPieProgressView.h */,
+				CA2BBDB42300313C007EFB8C /* SDTransparentPieProgressView.m */,
+			);
+			path = SDProgress;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,12 +449,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA2BBDB62300313C007EFB8C /* SDTransparentPieProgressView.m in Sources */,
 				CA1F9A9F22FE78B30093C1AC /* ViewController.m in Sources */,
 				CA88D03422FFB409001DDD01 /* MediaViewController.m in Sources */,
 				CA88D03122FFA4F7001DDD01 /* JAFPlayerCacheManager.m in Sources */,
 				CA1F9AAA22FE78B40093C1AC /* main.m in Sources */,
 				CA1F9A9C22FE78B30093C1AC /* AppDelegate.m in Sources */,
 				CA1F9ACF22FE96570093C1AC /* JAFPlayerViewController.m in Sources */,
+				CA2BBDB52300313C007EFB8C /* SDBaseProgressView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

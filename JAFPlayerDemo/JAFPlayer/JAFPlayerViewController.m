@@ -13,6 +13,8 @@
 #import "UIImageView+ZFCache.h"
 #import "ZFUtilities.h"
 #import "JAFPlayerCacheManager.h"
+#import <AFNetworking/AFNetworking.h>
+#import "SDProgress/SDTransparentPieProgressView.h"
 
 #define iPhoneX_DEVICE      (ScreenHeight==812.0?YES:NO)
 #define SafeBottom          (iPhoneX_DEVICE?34:0)
@@ -20,12 +22,22 @@
 #define ScreenHeight [UIScreen mainScreen].bounds.size.height
 #define ScreenWidth [UIScreen mainScreen].bounds.size.width
 
-@interface JAFPlayerViewController ()
+typedef NS_ENUM(NSInteger, ConverDownloadTag) {
+    ConverDownloadEnd,
+    ConverDownloadIng
+};
+
+@interface JAFPlayerViewController (){
+    
+    NSURLSessionDownloadTask *_downloadTask;
+    
+}
 
 @property (nonatomic, strong) UIImageView* sourceView;
 @property (nonatomic, strong) UIImage* placeHolderImage;
 @property (nonatomic, assign) CGPoint startLocation;
 @property (nonatomic, assign) CGRect startFrame;
+@property (nonatomic, strong) SDTransparentPieProgressView* progressView;
 
 @property (nonatomic, strong) UIView* backColorView;
 @property (nonatomic, strong) UIView* playContentView;
@@ -35,11 +47,14 @@
 @property (nonatomic, strong) UIButton* playBtn;
 @property (nonatomic, strong) UIButton *closeBtn;
 @property (nonatomic, assign) BOOL noPlayToolHiddenStatu;
-@property (nonatomic, assign) BOOL playEnded;
 @property (nonatomic, strong) UIButton *proCloseBtn;//视频stop后显示的关闭按钮
 @property (nonatomic, strong) NSArray <NSURL *>*assetURLs;
 
+@property (nonatomic, copy) NSString* sourceUrl;
 @property (nonatomic, strong) NSURL* videoUrl;
+
+/* 转为下载路径的标识，NO代表可以转为下载路径 */
+@property (nonatomic, assign) ConverDownloadTag converDownloadTag;
 
 @end
 
@@ -57,12 +72,29 @@
         self.modalPresentationStyle = UIModalPresentationCustom;
         self.modalTransitionStyle = UIModalTransitionStyleCoverVertical;
         if([videoUrl containsString:@"http"]){
-            self.videoUrl = [[JAFPlayerCacheManager shareManager] proxyUrl:videoUrl];
+            if([[JAFPlayerCacheManager shareManager] fetchVideoCachePathByHTTPUrl:videoUrl]){
+                //文件下载类型缓存下的本地路径
+                self.videoUrl = [NSURL URLWithString:[[JAFPlayerCacheManager shareManager] fetchVideoCachePathByHTTPUrl:videoUrl]];
+            }else{
+                //流媒体播放地址 或 待下载的文件类型播放地址
+                self.videoUrl = [[JAFPlayerCacheManager shareManager] proxyUrl:videoUrl];
+            }
         }else{
-            self.videoUrl = [NSURL URLWithString:videoUrl];
+            //本地路径播放地址
+            if([videoUrl containsString:@"file://"]){
+                self.videoUrl = [NSURL URLWithString:videoUrl];
+            }else{
+                if([[videoUrl substringWithRange:NSMakeRange(0, 1)] isEqualToString:@"/"]){
+                    self.videoUrl = [NSURL URLWithString:[@"file://" stringByAppendingString:videoUrl]];
+                }else{
+                    self.videoUrl = [NSURL URLWithString:[@"file:///" stringByAppendingString:videoUrl]];
+                }
+            }
         }
+        self.sourceUrl = videoUrl;
         self.sourceView = sourceView;
         self.placeHolderImage = sourceView.image;
+        self.converDownloadTag = ConverDownloadEnd;
     }
     return self;
 }
@@ -77,6 +109,15 @@
     [super viewDidLoad];
     self.view.backgroundColor = [UIColor clearColor];
     [self buildPalyerUI];
+    
+    //kvo add failBtn
+    [self.controlView.failBtn addObserver:self forKeyPath:@"hidden" options:NSKeyValueObservingOptionNew context:nil];
+}
+
+-(void)dealloc{
+    [self.controlView.failBtn removeObserver:self forKeyPath:@"hidden"];
+    if(_downloadTask) [_downloadTask cancel];
+
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -127,7 +168,19 @@
     return UIInterfaceOrientationMaskPortrait;
 }
 
-#pragma mark - BuildUI
+#pragma mark - observerNoti
+
+-(void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary<NSKeyValueChangeKey,id> *)change context:(void *)context{
+    if([keyPath isEqualToString:@"hidden"] && object == self.controlView.failBtn){
+        BOOL hiddenValue = [[change objectForKey:NSKeyValueChangeNewKey] boolValue];
+        if(hiddenValue == NO){
+            //进入下载的方式
+            [self downloadVideoFile];
+        }
+    }
+}
+
+#pragma mark - BuildPlayer
 
 -(void)buildPalyerUI{
     [self.view addSubview:self.backColorView];
@@ -155,7 +208,6 @@
     self.player.playerDidToEnd = ^(id  _Nonnull asset) {
         @strongify(self)
         [self.player stop];
-        self.playEnded = YES;
         self.noPlayToolHiddenStatu = NO;
     };
     
@@ -171,6 +223,16 @@
     self.controlView.backgroundColor = [UIColor clearColor];
     
 }
+/* 将当前播放路径转化为本地路径,检测到缓存时调用该方法 */
+-(void)resetVideoPathToLocalPath:(NSString*)localPath{
+    self.progressView.hidden = YES;
+    self.noPlayToolHiddenStatu = YES;
+    self.sourceUrl = localPath;
+    self.videoUrl = [NSURL URLWithString:localPath];
+    self.assetURLs = @[self.videoUrl];
+    self.player.assetURLs = self.assetURLs;
+    [self.player playTheIndex:0];
+}
 
 #pragma mark - Animation
 
@@ -182,7 +244,6 @@
             self.playContentView.alpha = 1.0f;
         } completion:^(BOOL finished) {
             [self.player playTheIndex:0];
-            self.playEnded = NO;
         }];
         
         return;
@@ -217,7 +278,6 @@
         [tempSourceView removeFromSuperview];
         self.playContentView.alpha = 1.0f;
         [self.player playTheIndex:0];
-        self.playEnded = NO;
     }];
 }
 
@@ -225,7 +285,6 @@
     self.noPlayToolHiddenStatu = YES;
     if(self.player){
         [self.player stop];
-        self.playEnded = YES;
     }
     if(!self.sourceView){
         [UIView animateWithDuration:.3 animations:^{
@@ -247,11 +306,11 @@
     self.noPlayToolHiddenStatu = YES;
     if(self.player){
         [self.player stop];
-        self.playEnded = YES;
     }
     [UIView animateWithDuration:.3 animations:^{
         self.backColorView.alpha = 0.0f;
         self.containerView.frame = sourceRect;
+        if(!self.progressView.hidden)self.progressView.center = CGPointMake(sourceRect.size.width/2.0, sourceRect.size.height/2.0);
     } completion:^(BOOL finished) {
         self.sourceView.alpha = 1.0f;
         [self dismissViewControllerAnimated:NO completion:nil];
@@ -267,16 +326,21 @@
     
     [UIView animateWithDuration:.3 animations:^{
         self.containerView.frame = endRect;
+        if(!self.progressView.hidden)self.progressView.center = CGPointMake(endRect.size.width/2.0, endRect.size.height/2.0);
         self.backColorView.alpha = 1.0f;
     } completion:^(BOOL finished) {
-        if(self.playEnded){
+        if(self.player.currentPlayerManager.playState == ZFPlayerPlayStatePlayStopped){
             self.noPlayToolHiddenStatu = NO;
+        }
+        if(self.converDownloadTag == ConverDownloadIng){
+            self.proCloseBtn.hidden = NO;
+            self.playBtn.hidden = YES;
         }
     }];
     
 }
 
-#pragma mark - setter
+#pragma mark - setter && getter
 
 -(void)setNoPlayToolHiddenStatu:(BOOL)noPlayToolHiddenStatu{
     _noPlayToolHiddenStatu = noPlayToolHiddenStatu;
@@ -293,7 +357,6 @@
 -(void)playeAction{
     self.noPlayToolHiddenStatu = YES;
     [self.player playTheIndex:0];
-    self.playEnded = NO;
     [self.controlView showTitle:@"" coverImage:[UIImage new] fullScreenMode:ZFFullScreenModeAutomatic];
 }
 
@@ -327,6 +390,7 @@
             CGFloat y = location.y - height * rateY;
             
             self.containerView.frame = CGRectMake(x, y, width, height);
+            if(!self.progressView.hidden)self.progressView.center = CGPointMake(width/2.0, height/2.0);
             
             self.view.backgroundColor = [UIColor colorWithWhite:0 alpha:percent];
             self.backColorView.alpha = percent;
@@ -345,6 +409,44 @@
         default:
             break;
     }
+}
+
+#pragma mark - Download
+
+-(void)downloadVideoFile{
+    if(self.converDownloadTag == ConverDownloadIng || _downloadTask){
+        return;
+    }
+    self.converDownloadTag = ConverDownloadIng;
+    [self.player stop];
+    self.proCloseBtn.hidden = NO;
+    self.playBtn.hidden = YES;
+    self.progressView.hidden = NO;
+    
+    NSURL *URL = [NSURL URLWithString:self.sourceUrl];
+    NSURLSessionConfiguration *configuration = [NSURLSessionConfiguration defaultSessionConfiguration];
+    AFURLSessionManager *manager = [[AFURLSessionManager alloc] initWithSessionConfiguration:configuration];
+    NSURLRequest *request = [NSURLRequest requestWithURL:URL];
+    _downloadTask = [manager downloadTaskWithRequest:request progress:^(NSProgress * _Nonnull downloadProgress) {
+        
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.progressView.progress = 1.0 * downloadProgress.completedUnitCount / downloadProgress.totalUnitCount;
+        });
+        
+    } destination:^NSURL * _Nonnull(NSURL * _Nonnull targetPath, NSURLResponse * _Nonnull response) {
+        
+        NSString *videoPath = [JAFPlayerCacheManager shareManager].localVideoPath;
+        NSString *path = [videoPath stringByAppendingPathComponent:response.suggestedFilename];
+        return [NSURL fileURLWithPath:path];
+        
+    } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
+        //设置下载完成操作
+        dispatch_async(dispatch_get_main_queue(), ^{
+            self.converDownloadTag = ConverDownloadEnd;
+            [self resetVideoPathToLocalPath:filePath.absoluteString];
+        });
+    }];
+    [_downloadTask resume];
 }
 
 
@@ -430,6 +532,17 @@
         _playBtn.hidden = YES;
     }
     return _playBtn;
+}
+
+-(SDTransparentPieProgressView *)progressView{
+    if(!_progressView){
+        _progressView = [SDTransparentPieProgressView progressView];
+        _progressView.frame = CGRectMake(self.containerView.frame.size.width/2.0-30, self.containerView.frame.size.height/2.0-30, 60, 60);
+        _progressView.progress = 0.0f;
+        [self.containerView addSubview:_progressView];
+        _progressView.hidden = YES;
+    }
+    return _progressView;
 }
 
 @end

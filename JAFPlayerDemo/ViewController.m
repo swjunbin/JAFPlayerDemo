@@ -53,9 +53,9 @@
 //    [brow showFromViewController:self];
 //    return;
     
-    //@"https://vodsoumffti.vod.126.net/vodsoumffti/8OFMJoHV_2524060764_hd.mp4"
-    //@"http://aliuwmp3.changba.com/userdata/video/45F6BD5E445E4C029C33DC5901307461.mp4"
-    NSString* url = @"http://aliuwmp3.changba.com/userdata/video/45F6BD5E445E4C029C33DC5901307461.mp4";
+    //NSString* url = @"https://vodsoumffti.vod.126.net/vodsoumffti/8OFMJoHV_2524060764_hd.mp4";
+    //NSString* url = @"http://aliuwmp3.changba.com/userdata/video/45F6BD5E445E4C029C33DC5901307461.mp4";
+    NSString* url = @"https://mtest.getech.cn/hebe/app/oss/pull/52699997accc2046999e15a26ce58d24.mp4";
     JAFPlayerViewController* vc = [JAFPlayerViewController playerWithVideoUrl:url SourceImageView:self.imageView];
     [vc showFromViewController:self];
     

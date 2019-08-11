@@ -12,9 +12,9 @@
 @end
 
 @implementation JAFPlayerCacheManager
-+(id)shareManager{
-    static JAFPlayerCacheManager* _manager = nil;
-    static dispatch_once_t _onceToken;
+static JAFPlayerCacheManager* _manager = nil;
+static dispatch_once_t _onceToken;
++(JAFPlayerCacheManager*)shareManager{
     
     if(!_manager){
         dispatch_once(&_onceToken, ^{
@@ -23,18 +23,6 @@
         });
     }
     return _manager;
-}
-
-+ (id)allocWithZone:(NSZone *)zone {
-    return [JAFPlayerCacheManager shareManager];
-}
-
-- (id)copyWithZone:(NSZone *)zone {
-    return [JAFPlayerCacheManager shareManager];
-}
-
-- (id)mutableCopyWithZone:(NSZone *)zone {
-    return [JAFPlayerCacheManager shareManager];
 }
 
 - (void)setupHTTPCache
@@ -65,6 +53,19 @@
 
 -(void)removeAllCache{
     [KTVHTTPCache cacheDeleteAllCaches];
+    [self removeFileCache];
+}
+
+-(void)removeFileCache{
+    NSError *error=nil;
+    NSFileManager* fileManager = [NSFileManager defaultManager];
+    NSArray<NSString*>* allVideoNames = [fileManager contentsOfDirectoryAtPath:self.localVideoPath error:&error];
+    if(error) return;
+    
+    for(NSString* videoName in allVideoNames){
+        NSString* videoPath = [self.localVideoPath stringByAppendingPathComponent:videoName];
+        [fileManager removeItemAtPath:videoPath error:nil];
+    }
 }
 
 -(long long)getCacheSizeLength{
@@ -74,11 +75,50 @@
             sizelength += zone.length;
         }
     }
+    sizelength += [self getFileVideoCacheSize];
     return sizelength;
+}
+
+-(long long)getFileVideoCacheSize{
+    long long cacheSize = 0;
+    NSError *error=nil;
+    NSFileManager* fileManager = [NSFileManager defaultManager];
+    NSArray<NSString*>* allVideoNames = [fileManager contentsOfDirectoryAtPath:self.localVideoPath error:&error];
+    if(error) return cacheSize;
+    
+    for(NSString* videoName in allVideoNames){
+        NSString* videoPath = [self.localVideoPath stringByAppendingPathComponent:videoName];
+        NSDictionary* dic = [fileManager attributesOfItemAtPath:videoPath error:nil];
+        cacheSize += [dic[NSFileSize] longLongValue];
+    }
+    return cacheSize;
+}
+
+-(NSString*)fetchVideoCachePathByHTTPUrl:(NSString*)httpUrl{
+    NSError *error=nil;
+    NSArray<NSString*>* allVideoNames = [[NSFileManager defaultManager] contentsOfDirectoryAtPath:self.localVideoPath error:&error];
+    if(error){
+        return nil;
+    }
+    NSString* httpVideoName = [[NSURL URLWithString:httpUrl] lastPathComponent];
+    for(NSString* videoName in allVideoNames){
+        if([videoName isEqualToString:httpVideoName]){
+            return [@"file://" stringByAppendingString:[self.localVideoPath stringByAppendingPathComponent:videoName]];
+        }
+    }
+    return nil;
 }
 
 #pragma mark - setter&&getter
 -(NSArray<KTVHCDataCacheItem *> *)allCacheItems{
     return [KTVHTTPCache cacheAllCacheItems];
+}
+
+-(NSString *)localVideoPath{
+    NSString* path = [[NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES) firstObject] stringByAppendingPathComponent:@"JAFVideoCache"];
+    if(![[NSFileManager defaultManager] fileExistsAtPath:path]){
+        [[NSFileManager defaultManager] createDirectoryAtPath:path withIntermediateDirectories:YES attributes:nil error:nil];
+    }
+    return path;
 }
 @end
