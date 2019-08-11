@@ -1,0 +1,756 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		43CCDEFD48C270E17A735187 /* Pods_JAFPlayerDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D609088F7BD1F5248048C1F9 /* Pods_JAFPlayerDemo.framework */; };
+		CA1F9A9C22FE78B30093C1AC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1F9A9B22FE78B30093C1AC /* AppDelegate.m */; };
+		CA1F9A9F22FE78B30093C1AC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1F9A9E22FE78B30093C1AC /* ViewController.m */; };
+		CA1F9AA222FE78B30093C1AC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1F9AA022FE78B30093C1AC /* Main.storyboard */; };
+		CA1F9AA422FE78B40093C1AC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA1F9AA322FE78B40093C1AC /* Assets.xcassets */; };
+		CA1F9AA722FE78B40093C1AC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1F9AA522FE78B40093C1AC /* LaunchScreen.storyboard */; };
+		CA1F9AAA22FE78B40093C1AC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1F9AA922FE78B40093C1AC /* main.m */; };
+		CA1F9AB422FE78B40093C1AC /* JAFPlayerDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1F9AB322FE78B40093C1AC /* JAFPlayerDemoTests.m */; };
+		CA1F9ABF22FE78B40093C1AC /* JAFPlayerDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1F9ABE22FE78B40093C1AC /* JAFPlayerDemoUITests.m */; };
+		CA1F9ACF22FE96570093C1AC /* JAFPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA1F9ACE22FE96570093C1AC /* JAFPlayerViewController.m */; };
+		CA88D02622FED670001DDD01 /* JAFPlayerPlay.png in Resources */ = {isa = PBXBuildFile; fileRef = CA88D02522FED670001DDD01 /* JAFPlayerPlay.png */; };
+		CA88D02822FED6DB001DDD01 /* JAFPlayerClose.png in Resources */ = {isa = PBXBuildFile; fileRef = CA88D02722FED6DB001DDD01 /* JAFPlayerClose.png */; };
+		CA88D02A22FED932001DDD01 /* test.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CA88D02922FED932001DDD01 /* test.jpg */; };
+		CA88D02C22FEECB2001DDD01 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA88D02B22FEECB2001DDD01 /* AVFoundation.framework */; };
+		CA88D03122FFA4F7001DDD01 /* JAFPlayerCacheManager.m in Sources */ = {isa = PBXBuildFile; fileRef = CA88D03022FFA4F7001DDD01 /* JAFPlayerCacheManager.m */; };
+		CA88D03422FFB409001DDD01 /* MediaViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CA88D03322FFB409001DDD01 /* MediaViewController.m */; };
+		D7B48D028624CD10EC7CDC53 /* Pods_JAFPlayerDemoTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 703D908ABBB3C888FAE8BEB9 /* Pods_JAFPlayerDemoTests.framework */; };
+		F67BA9C8DB1A6E4112494762 /* Pods_JAFPlayerDemoUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 62EDDFC3B42C5B1E7194DD87 /* Pods_JAFPlayerDemoUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CA1F9AB022FE78B40093C1AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA1F9A8F22FE78B30093C1AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA1F9A9622FE78B30093C1AC;
+			remoteInfo = JAFPlayerDemo;
+		};
+		CA1F9ABB22FE78B40093C1AC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CA1F9A8F22FE78B30093C1AC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CA1F9A9622FE78B30093C1AC;
+			remoteInfo = JAFPlayerDemo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		05A19378F3A5E00980402D4C /* Pods-JAFPlayerDemoTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAFPlayerDemoTests.release.xcconfig"; path = "Target Support Files/Pods-JAFPlayerDemoTests/Pods-JAFPlayerDemoTests.release.xcconfig"; sourceTree = "<group>"; };
+		4A6155CEFA0FA3FF47081A9C /* Pods-JAFPlayerDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAFPlayerDemo.release.xcconfig"; path = "Target Support Files/Pods-JAFPlayerDemo/Pods-JAFPlayerDemo.release.xcconfig"; sourceTree = "<group>"; };
+		5239E0314071991B741D017E /* Pods-JAFPlayerDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAFPlayerDemo.debug.xcconfig"; path = "Target Support Files/Pods-JAFPlayerDemo/Pods-JAFPlayerDemo.debug.xcconfig"; sourceTree = "<group>"; };
+		62EDDFC3B42C5B1E7194DD87 /* Pods_JAFPlayerDemoUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JAFPlayerDemoUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6B882196E9481847558BFCDD /* Pods-JAFPlayerDemoTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAFPlayerDemoTests.debug.xcconfig"; path = "Target Support Files/Pods-JAFPlayerDemoTests/Pods-JAFPlayerDemoTests.debug.xcconfig"; sourceTree = "<group>"; };
+		703D908ABBB3C888FAE8BEB9 /* Pods_JAFPlayerDemoTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JAFPlayerDemoTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88A8EDD30B02A62CCBDC6DAA /* Pods-JAFPlayerDemoUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAFPlayerDemoUITests.debug.xcconfig"; path = "Target Support Files/Pods-JAFPlayerDemoUITests/Pods-JAFPlayerDemoUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		8BF725BAA07573DBDAA647F4 /* Pods-JAFPlayerDemoUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-JAFPlayerDemoUITests.release.xcconfig"; path = "Target Support Files/Pods-JAFPlayerDemoUITests/Pods-JAFPlayerDemoUITests.release.xcconfig"; sourceTree = "<group>"; };
+		CA1F9A9722FE78B30093C1AC /* JAFPlayerDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JAFPlayerDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1F9A9A22FE78B30093C1AC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CA1F9A9B22FE78B30093C1AC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CA1F9A9D22FE78B30093C1AC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CA1F9A9E22FE78B30093C1AC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CA1F9AA122FE78B30093C1AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CA1F9AA322FE78B40093C1AC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CA1F9AA622FE78B40093C1AC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CA1F9AA822FE78B40093C1AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA1F9AA922FE78B40093C1AC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CA1F9AAF22FE78B40093C1AC /* JAFPlayerDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JAFPlayerDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1F9AB322FE78B40093C1AC /* JAFPlayerDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAFPlayerDemoTests.m; sourceTree = "<group>"; };
+		CA1F9AB522FE78B40093C1AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA1F9ABA22FE78B40093C1AC /* JAFPlayerDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = JAFPlayerDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CA1F9ABE22FE78B40093C1AC /* JAFPlayerDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAFPlayerDemoUITests.m; sourceTree = "<group>"; };
+		CA1F9AC022FE78B40093C1AC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CA1F9ACD22FE96570093C1AC /* JAFPlayerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JAFPlayerViewController.h; sourceTree = "<group>"; };
+		CA1F9ACE22FE96570093C1AC /* JAFPlayerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JAFPlayerViewController.m; sourceTree = "<group>"; };
+		CA88D02522FED670001DDD01 /* JAFPlayerPlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JAFPlayerPlay.png; sourceTree = "<group>"; };
+		CA88D02722FED6DB001DDD01 /* JAFPlayerClose.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = JAFPlayerClose.png; sourceTree = "<group>"; };
+		CA88D02922FED932001DDD01 /* test.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.jpg; sourceTree = "<group>"; };
+		CA88D02B22FEECB2001DDD01 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		CA88D02F22FFA4F7001DDD01 /* JAFPlayerCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JAFPlayerCacheManager.h; sourceTree = "<group>"; };
+		CA88D03022FFA4F7001DDD01 /* JAFPlayerCacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JAFPlayerCacheManager.m; sourceTree = "<group>"; };
+		CA88D03222FFB409001DDD01 /* MediaViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MediaViewController.h; sourceTree = "<group>"; };
+		CA88D03322FFB409001DDD01 /* MediaViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MediaViewController.m; sourceTree = "<group>"; };
+		D609088F7BD1F5248048C1F9 /* Pods_JAFPlayerDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_JAFPlayerDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CA1F9A9422FE78B30093C1AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA88D02C22FEECB2001DDD01 /* AVFoundation.framework in Frameworks */,
+				43CCDEFD48C270E17A735187 /* Pods_JAFPlayerDemo.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA1F9AAC22FE78B40093C1AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D7B48D028624CD10EC7CDC53 /* Pods_JAFPlayerDemoTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA1F9AB722FE78B40093C1AC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F67BA9C8DB1A6E4112494762 /* Pods_JAFPlayerDemoUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		34CA83D4F9C22912D588382B /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5239E0314071991B741D017E /* Pods-JAFPlayerDemo.debug.xcconfig */,
+				4A6155CEFA0FA3FF47081A9C /* Pods-JAFPlayerDemo.release.xcconfig */,
+				6B882196E9481847558BFCDD /* Pods-JAFPlayerDemoTests.debug.xcconfig */,
+				05A19378F3A5E00980402D4C /* Pods-JAFPlayerDemoTests.release.xcconfig */,
+				88A8EDD30B02A62CCBDC6DAA /* Pods-JAFPlayerDemoUITests.debug.xcconfig */,
+				8BF725BAA07573DBDAA647F4 /* Pods-JAFPlayerDemoUITests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		4286DC7BBE0E67263EACE3DC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CA88D02B22FEECB2001DDD01 /* AVFoundation.framework */,
+				D609088F7BD1F5248048C1F9 /* Pods_JAFPlayerDemo.framework */,
+				703D908ABBB3C888FAE8BEB9 /* Pods_JAFPlayerDemoTests.framework */,
+				62EDDFC3B42C5B1E7194DD87 /* Pods_JAFPlayerDemoUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CA1F9A8E22FE78B30093C1AC = {
+			isa = PBXGroup;
+			children = (
+				CA1F9A9922FE78B30093C1AC /* JAFPlayerDemo */,
+				CA1F9AB222FE78B40093C1AC /* JAFPlayerDemoTests */,
+				CA1F9ABD22FE78B40093C1AC /* JAFPlayerDemoUITests */,
+				CA1F9A9822FE78B30093C1AC /* Products */,
+				34CA83D4F9C22912D588382B /* Pods */,
+				4286DC7BBE0E67263EACE3DC /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CA1F9A9822FE78B30093C1AC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CA1F9A9722FE78B30093C1AC /* JAFPlayerDemo.app */,
+				CA1F9AAF22FE78B40093C1AC /* JAFPlayerDemoTests.xctest */,
+				CA1F9ABA22FE78B40093C1AC /* JAFPlayerDemoUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CA1F9A9922FE78B30093C1AC /* JAFPlayerDemo */ = {
+			isa = PBXGroup;
+			children = (
+				CA1F9ACC22FE96410093C1AC /* JAFPlayer */,
+				CA1F9A9A22FE78B30093C1AC /* AppDelegate.h */,
+				CA1F9A9B22FE78B30093C1AC /* AppDelegate.m */,
+				CA1F9A9D22FE78B30093C1AC /* ViewController.h */,
+				CA1F9A9E22FE78B30093C1AC /* ViewController.m */,
+				CA88D03222FFB409001DDD01 /* MediaViewController.h */,
+				CA88D03322FFB409001DDD01 /* MediaViewController.m */,
+				CA1F9AA022FE78B30093C1AC /* Main.storyboard */,
+				CA1F9AA322FE78B40093C1AC /* Assets.xcassets */,
+				CA1F9AA522FE78B40093C1AC /* LaunchScreen.storyboard */,
+				CA1F9AA822FE78B40093C1AC /* Info.plist */,
+				CA1F9AA922FE78B40093C1AC /* main.m */,
+				CA88D02922FED932001DDD01 /* test.jpg */,
+			);
+			path = JAFPlayerDemo;
+			sourceTree = "<group>";
+		};
+		CA1F9AB222FE78B40093C1AC /* JAFPlayerDemoTests */ = {
+			isa = PBXGroup;
+			children = (
+				CA1F9AB322FE78B40093C1AC /* JAFPlayerDemoTests.m */,
+				CA1F9AB522FE78B40093C1AC /* Info.plist */,
+			);
+			path = JAFPlayerDemoTests;
+			sourceTree = "<group>";
+		};
+		CA1F9ABD22FE78B40093C1AC /* JAFPlayerDemoUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CA1F9ABE22FE78B40093C1AC /* JAFPlayerDemoUITests.m */,
+				CA1F9AC022FE78B40093C1AC /* Info.plist */,
+			);
+			path = JAFPlayerDemoUITests;
+			sourceTree = "<group>";
+		};
+		CA1F9ACC22FE96410093C1AC /* JAFPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				CA88D02722FED6DB001DDD01 /* JAFPlayerClose.png */,
+				CA88D02522FED670001DDD01 /* JAFPlayerPlay.png */,
+				CA1F9ACD22FE96570093C1AC /* JAFPlayerViewController.h */,
+				CA1F9ACE22FE96570093C1AC /* JAFPlayerViewController.m */,
+				CA88D02F22FFA4F7001DDD01 /* JAFPlayerCacheManager.h */,
+				CA88D03022FFA4F7001DDD01 /* JAFPlayerCacheManager.m */,
+			);
+			path = JAFPlayer;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CA1F9A9622FE78B30093C1AC /* JAFPlayerDemo */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA1F9AC322FE78B40093C1AC /* Build configuration list for PBXNativeTarget "JAFPlayerDemo" */;
+			buildPhases = (
+				698DA9DF6C74D6AB08E71E45 /* [CP] Check Pods Manifest.lock */,
+				CA1F9A9322FE78B30093C1AC /* Sources */,
+				CA1F9A9422FE78B30093C1AC /* Frameworks */,
+				CA1F9A9522FE78B30093C1AC /* Resources */,
+				A9CC9709C730EE725431CA2A /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JAFPlayerDemo;
+			productName = JAFPlayerDemo;
+			productReference = CA1F9A9722FE78B30093C1AC /* JAFPlayerDemo.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CA1F9AAE22FE78B40093C1AC /* JAFPlayerDemoTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA1F9AC622FE78B40093C1AC /* Build configuration list for PBXNativeTarget "JAFPlayerDemoTests" */;
+			buildPhases = (
+				2F3A7C4756A9ABE50BD8ECAE /* [CP] Check Pods Manifest.lock */,
+				CA1F9AAB22FE78B40093C1AC /* Sources */,
+				CA1F9AAC22FE78B40093C1AC /* Frameworks */,
+				CA1F9AAD22FE78B40093C1AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA1F9AB122FE78B40093C1AC /* PBXTargetDependency */,
+			);
+			name = JAFPlayerDemoTests;
+			productName = JAFPlayerDemoTests;
+			productReference = CA1F9AAF22FE78B40093C1AC /* JAFPlayerDemoTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CA1F9AB922FE78B40093C1AC /* JAFPlayerDemoUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CA1F9AC922FE78B40093C1AC /* Build configuration list for PBXNativeTarget "JAFPlayerDemoUITests" */;
+			buildPhases = (
+				527D7928D8AD7CFDB1BE47C9 /* [CP] Check Pods Manifest.lock */,
+				CA1F9AB622FE78B40093C1AC /* Sources */,
+				CA1F9AB722FE78B40093C1AC /* Frameworks */,
+				CA1F9AB822FE78B40093C1AC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CA1F9ABC22FE78B40093C1AC /* PBXTargetDependency */,
+			);
+			name = JAFPlayerDemoUITests;
+			productName = JAFPlayerDemoUITests;
+			productReference = CA1F9ABA22FE78B40093C1AC /* JAFPlayerDemoUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CA1F9A8F22FE78B30093C1AC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = SuperPanda_Jamfer;
+				TargetAttributes = {
+					CA1F9A9622FE78B30093C1AC = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					CA1F9AAE22FE78B40093C1AC = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = CA1F9A9622FE78B30093C1AC;
+					};
+					CA1F9AB922FE78B40093C1AC = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = CA1F9A9622FE78B30093C1AC;
+					};
+				};
+			};
+			buildConfigurationList = CA1F9A9222FE78B30093C1AC /* Build configuration list for PBXProject "JAFPlayerDemo" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CA1F9A8E22FE78B30093C1AC;
+			productRefGroup = CA1F9A9822FE78B30093C1AC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CA1F9A9622FE78B30093C1AC /* JAFPlayerDemo */,
+				CA1F9AAE22FE78B40093C1AC /* JAFPlayerDemoTests */,
+				CA1F9AB922FE78B40093C1AC /* JAFPlayerDemoUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CA1F9A9522FE78B30093C1AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1F9AA722FE78B40093C1AC /* LaunchScreen.storyboard in Resources */,
+				CA88D02A22FED932001DDD01 /* test.jpg in Resources */,
+				CA1F9AA422FE78B40093C1AC /* Assets.xcassets in Resources */,
+				CA88D02622FED670001DDD01 /* JAFPlayerPlay.png in Resources */,
+				CA1F9AA222FE78B30093C1AC /* Main.storyboard in Resources */,
+				CA88D02822FED6DB001DDD01 /* JAFPlayerClose.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA1F9AAD22FE78B40093C1AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA1F9AB822FE78B40093C1AC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2F3A7C4756A9ABE50BD8ECAE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JAFPlayerDemoTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		527D7928D8AD7CFDB1BE47C9 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JAFPlayerDemoUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		698DA9DF6C74D6AB08E71E45 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-JAFPlayerDemo-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9CC9709C730EE725431CA2A /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JAFPlayerDemo/Pods-JAFPlayerDemo-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-JAFPlayerDemo/Pods-JAFPlayerDemo-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-JAFPlayerDemo/Pods-JAFPlayerDemo-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CA1F9A9322FE78B30093C1AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1F9A9F22FE78B30093C1AC /* ViewController.m in Sources */,
+				CA88D03422FFB409001DDD01 /* MediaViewController.m in Sources */,
+				CA88D03122FFA4F7001DDD01 /* JAFPlayerCacheManager.m in Sources */,
+				CA1F9AAA22FE78B40093C1AC /* main.m in Sources */,
+				CA1F9A9C22FE78B30093C1AC /* AppDelegate.m in Sources */,
+				CA1F9ACF22FE96570093C1AC /* JAFPlayerViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA1F9AAB22FE78B40093C1AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1F9AB422FE78B40093C1AC /* JAFPlayerDemoTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CA1F9AB622FE78B40093C1AC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CA1F9ABF22FE78B40093C1AC /* JAFPlayerDemoUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CA1F9AB122FE78B40093C1AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA1F9A9622FE78B30093C1AC /* JAFPlayerDemo */;
+			targetProxy = CA1F9AB022FE78B40093C1AC /* PBXContainerItemProxy */;
+		};
+		CA1F9ABC22FE78B40093C1AC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CA1F9A9622FE78B30093C1AC /* JAFPlayerDemo */;
+			targetProxy = CA1F9ABB22FE78B40093C1AC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CA1F9AA022FE78B30093C1AC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA1F9AA122FE78B30093C1AC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CA1F9AA522FE78B40093C1AC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CA1F9AA622FE78B40093C1AC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CA1F9AC122FE78B40093C1AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		CA1F9AC222FE78B40093C1AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CA1F9AC422FE78B40093C1AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5239E0314071991B741D017E /* Pods-JAFPlayerDemo.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JAFPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JAMFER.JAFPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CA1F9AC522FE78B40093C1AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4A6155CEFA0FA3FF47081A9C /* Pods-JAFPlayerDemo.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JAFPlayerDemo/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JAMFER.JAFPlayerDemo;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CA1F9AC722FE78B40093C1AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B882196E9481847558BFCDD /* Pods-JAFPlayerDemoTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JAFPlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JAMFER.JAFPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JAFPlayerDemo.app/JAFPlayerDemo";
+			};
+			name = Debug;
+		};
+		CA1F9AC822FE78B40093C1AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 05A19378F3A5E00980402D4C /* Pods-JAFPlayerDemoTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JAFPlayerDemoTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JAMFER.JAFPlayerDemoTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JAFPlayerDemo.app/JAFPlayerDemo";
+			};
+			name = Release;
+		};
+		CA1F9ACA22FE78B40093C1AC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 88A8EDD30B02A62CCBDC6DAA /* Pods-JAFPlayerDemoUITests.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JAFPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JAMFER.JAFPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JAFPlayerDemo;
+			};
+			name = Debug;
+		};
+		CA1F9ACB22FE78B40093C1AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8BF725BAA07573DBDAA647F4 /* Pods-JAFPlayerDemoUITests.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = JAFPlayerDemoUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = JAMFER.JAFPlayerDemoUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = JAFPlayerDemo;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CA1F9A9222FE78B30093C1AC /* Build configuration list for PBXProject "JAFPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA1F9AC122FE78B40093C1AC /* Debug */,
+				CA1F9AC222FE78B40093C1AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA1F9AC322FE78B40093C1AC /* Build configuration list for PBXNativeTarget "JAFPlayerDemo" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA1F9AC422FE78B40093C1AC /* Debug */,
+				CA1F9AC522FE78B40093C1AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA1F9AC622FE78B40093C1AC /* Build configuration list for PBXNativeTarget "JAFPlayerDemoTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA1F9AC722FE78B40093C1AC /* Debug */,
+				CA1F9AC822FE78B40093C1AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CA1F9AC922FE78B40093C1AC /* Build configuration list for PBXNativeTarget "JAFPlayerDemoUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CA1F9ACA22FE78B40093C1AC /* Debug */,
+				CA1F9ACB22FE78B40093C1AC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CA1F9A8F22FE78B30093C1AC /* Project object */;
+}

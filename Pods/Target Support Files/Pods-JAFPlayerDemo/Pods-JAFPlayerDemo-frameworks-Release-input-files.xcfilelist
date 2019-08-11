@@ -1,0 +1,7 @@
+${PODS_ROOT}/Target Support Files/Pods-JAFPlayerDemo/Pods-JAFPlayerDemo-frameworks.sh
+${BUILT_PRODUCTS_DIR}/CocoaAsyncSocket/CocoaAsyncSocket.framework
+${BUILT_PRODUCTS_DIR}/KSPhotoBrowser/KSPhotoBrowser.framework
+${BUILT_PRODUCTS_DIR}/KTVCocoaHTTPServer/KTVCocoaHTTPServer.framework
+${BUILT_PRODUCTS_DIR}/KTVHTTPCache/KTVHTTPCache.framework
+${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework
+${BUILT_PRODUCTS_DIR}/ZFPlayer/ZFPlayer.framework
