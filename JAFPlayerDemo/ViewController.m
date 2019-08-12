@@ -39,9 +39,9 @@
     self.imageView = iv;
     iv.image = [UIImage imageNamed:@"test.jpg"];
     
-    UIImage* newImage = [self getVideoThumbnailWithUrl:[NSURL URLWithString:@"http://aliuwmp3.changba.com/userdata/video/45F6BD5E445E4C029C33DC5901307461.mp4"] second:1];
-    iv.frame = CGRectMake(20, 100, 200, 200*(newImage.size.height/newImage.size.width));
-    iv.image = newImage;
+//    UIImage* newImage = [self getVideoThumbnailWithUrl:[NSURL URLWithString:@"http://aliuwmp3.changba.com/userdata/video/45F6BD5E445E4C029C33DC5901307461.mp4"] second:1];
+//    iv.frame = CGRectMake(20, 100, 200, 200*(newImage.size.height/newImage.size.width));
+//    iv.image = newImage;
 }
 
 -(void)touchTap{

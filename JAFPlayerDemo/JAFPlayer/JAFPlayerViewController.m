@@ -415,6 +415,10 @@ typedef NS_ENUM(NSInteger, ConverDownloadTag) {
 
 -(void)downloadVideoFile{
     if(self.converDownloadTag == ConverDownloadIng || _downloadTask){
+        if(_downloadTask){
+            [_downloadTask cancel];
+            _downloadTask = nil;
+        }
         return;
     }
     self.converDownloadTag = ConverDownloadIng;
@@ -440,11 +444,19 @@ typedef NS_ENUM(NSInteger, ConverDownloadTag) {
         return [NSURL fileURLWithPath:path];
         
     } completionHandler:^(NSURLResponse * _Nonnull response, NSURL * _Nullable filePath, NSError * _Nullable error) {
-        //设置下载完成操作
-        dispatch_async(dispatch_get_main_queue(), ^{
+        if(error){
             self.converDownloadTag = ConverDownloadEnd;
-            [self resetVideoPathToLocalPath:filePath.absoluteString];
-        });
+            self.noPlayToolHiddenStatu = YES;
+            self.progressView.hidden = YES;
+            [self.player playTheIndex:0];
+        }else{
+            //设置下载完成操作
+            dispatch_async(dispatch_get_main_queue(), ^{
+                self.converDownloadTag = ConverDownloadEnd;
+                [self resetVideoPathToLocalPath:filePath.absoluteString];
+            });
+        }
+        
     }];
     [_downloadTask resume];
 }

@@ -1,0 +1,943 @@
+{
+  'version': 0,
+  'case-sensitive': 'false',
+  'roots': [
+    {
+      'type': 'directory',
+      'name': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "AFAutoPurgingImageCache.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/UIKit+AFNetworking/AFAutoPurgingImageCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFCompatibilityMacros.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/AFNetworking/AFCompatibilityMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFHTTPSessionManager.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/AFNetworking/AFHTTPSessionManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFImageDownloader.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/UIKit+AFNetworking/AFImageDownloader.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFNetworkActivityIndicatorManager.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/UIKit+AFNetworking/AFNetworkActivityIndicatorManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFNetworkReachabilityManager.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/AFNetworking/AFNetworkReachabilityManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFNetworking-Swift.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworking-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFNetworking-umbrella.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/Target Support Files/AFNetworking/AFNetworking-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFNetworking.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/AFNetworking/AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFSecurityPolicy.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/AFNetworking/AFSecurityPolicy.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFURLRequestSerialization.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/AFNetworking/AFURLRequestSerialization.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFURLResponseSerialization.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/AFNetworking/AFURLResponseSerialization.h"
+        },
+        {
+          'type': 'file',
+          'name': "AFURLSessionManager.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/AFNetworking/AFURLSessionManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIActivityIndicatorView+AFNetworking.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/UIKit+AFNetworking/UIActivityIndicatorView+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIButton+AFNetworking.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/UIKit+AFNetworking/UIButton+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+AFNetworking.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/UIKit+AFNetworking/UIImage+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImageView+AFNetworking.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/UIKit+AFNetworking/UIImageView+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIKit+AFNetworking.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/UIKit+AFNetworking/UIKit+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIProgressView+AFNetworking.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/UIKit+AFNetworking/UIProgressView+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIRefreshControl+AFNetworking.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/UIKit+AFNetworking/UIRefreshControl+AFNetworking.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIWebView+AFNetworking.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/AFNetworking/UIKit+AFNetworking/UIWebView+AFNetworking.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/AFNetworking.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "CocoaAsyncSocket-Swift.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/CocoaAsyncSocket/CocoaAsyncSocket.framework/Headers/CocoaAsyncSocket-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "CocoaAsyncSocket-umbrella.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/Target Support Files/CocoaAsyncSocket/CocoaAsyncSocket-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "GCDAsyncSocket.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/CocoaAsyncSocket/Source/GCD/GCDAsyncSocket.h"
+        },
+        {
+          'type': 'file',
+          'name': "GCDAsyncUdpSocket.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/CocoaAsyncSocket/Source/GCD/GCDAsyncUdpSocket.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/CocoaAsyncSocket/CocoaAsyncSocket.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/CocoaAsyncSocket.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/KSPhotoBrowser/KSPhotoBrowser.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "KSImageManagerProtocol.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KSPhotoBrowser/KSPhotoBrowser/KSImageManagerProtocol.h"
+        },
+        {
+          'type': 'file',
+          'name': "KSPhotoBrowser-Swift.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/KSPhotoBrowser/KSPhotoBrowser.framework/Headers/KSPhotoBrowser-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "KSPhotoBrowser-umbrella.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/Target Support Files/KSPhotoBrowser/KSPhotoBrowser-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "KSPhotoBrowser.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KSPhotoBrowser/KSPhotoBrowser/KSPhotoBrowser.h"
+        },
+        {
+          'type': 'file',
+          'name': "KSPhotoItem.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KSPhotoBrowser/KSPhotoBrowser/KSPhotoItem.h"
+        },
+        {
+          'type': 'file',
+          'name': "KSPhotoView.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KSPhotoBrowser/KSPhotoBrowser/KSPhotoView.h"
+        },
+        {
+          'type': 'file',
+          'name': "KSProgressLayer.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KSPhotoBrowser/KSPhotoBrowser/KSProgressLayer.h"
+        },
+        {
+          'type': 'file',
+          'name': "KSSDImageManager.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KSPhotoBrowser/KSPhotoBrowser/KSSDImageManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+KS.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KSPhotoBrowser/KSPhotoBrowser/UIImage+KS.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/KSPhotoBrowser/KSPhotoBrowser.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/KSPhotoBrowser.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/KTVCocoaHTTPServer/KTVCocoaHTTPServer.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "DDData.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/Categories/DDData.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDNumber.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/Categories/DDNumber.h"
+        },
+        {
+          'type': 'file',
+          'name': "DDRange.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/Categories/DDRange.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPAsyncFileResponse.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/Responses/HTTPAsyncFileResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPAuthenticationRequest.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/HTTPAuthenticationRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPConnection.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/HTTPConnection.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPDataResponse.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/Responses/HTTPDataResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPDynamicFileResponse.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/Responses/HTTPDynamicFileResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPErrorResponse.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/Responses/HTTPErrorResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPFileResponse.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/Responses/HTTPFileResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPLogging.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/HTTPLogging.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPMessage.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/HTTPMessage.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPRedirectResponse.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/Responses/HTTPRedirectResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPResponse.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/HTTPResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "HTTPServer.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/HTTPServer.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVCocoaHTTPServer-Swift.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/KTVCocoaHTTPServer/KTVCocoaHTTPServer.framework/Headers/KTVCocoaHTTPServer-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVCocoaHTTPServer-umbrella.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/Target Support Files/KTVCocoaHTTPServer/KTVCocoaHTTPServer-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVCocoaHTTPServer.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/KTVCocoaHTTPServer.h"
+        },
+        {
+          'type': 'file',
+          'name': "MultipartFormDataParser.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/Mime/MultipartFormDataParser.h"
+        },
+        {
+          'type': 'file',
+          'name': "MultipartMessageHeader.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/Mime/MultipartMessageHeader.h"
+        },
+        {
+          'type': 'file',
+          'name': "MultipartMessageHeaderField.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/Mime/MultipartMessageHeaderField.h"
+        },
+        {
+          'type': 'file',
+          'name': "WebSocket.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVCocoaHTTPServer/KTVCocoaHTTPServer/Classes/WebSocket.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/KTVCocoaHTTPServer/KTVCocoaHTTPServer.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/KTVCocoaHTTPServer.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/KTVHTTPCache/KTVHTTPCache.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "KTVHCDataCacheItem.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataCacheItem.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataCacheItemZone.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataCacheItemZone.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataLoader.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataLoader.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataReader.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataReader.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataRequest.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataRequest.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCDataResponse.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCDataStorage/KTVHCDataResponse.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHCRange.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVHTTPCache/KTVHTTPCache/Classes/KTVHCCommon/KTVHCRange.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHTTPCache-Swift.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/KTVHTTPCache/KTVHTTPCache.framework/Headers/KTVHTTPCache-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHTTPCache-umbrella.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/Target Support Files/KTVHTTPCache/KTVHTTPCache-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "KTVHTTPCache.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/KTVHTTPCache/KTVHTTPCache/KTVHTTPCache.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/KTVHTTPCache/KTVHTTPCache.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/KTVHTTPCache.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/Pods_JAFPlayerDemo.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "Pods-JAFPlayerDemo-umbrella.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/Target Support Files/Pods-JAFPlayerDemo/Pods-JAFPlayerDemo-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "Pods_JAFPlayerDemo-Swift.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/Pods_JAFPlayerDemo.framework/Headers/Pods_JAFPlayerDemo-Swift.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/Pods_JAFPlayerDemo.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/Pods-JAFPlayerDemo.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "NSButton+WebCache.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/NSButton+WebCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSData+ImageContentType.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/NSData+ImageContentType.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSImage+Compatibility.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/NSImage+Compatibility.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDAnimatedImage.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDAnimatedImage.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDAnimatedImageRep.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDAnimatedImageRep.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDAnimatedImageView+WebCache.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDAnimatedImageView+WebCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDAnimatedImageView.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDAnimatedImageView.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDDiskCache.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDDiskCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageAPNGCoder.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDImageAPNGCoder.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageCache.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDImageCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageCacheConfig.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDImageCacheConfig.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageCacheDefine.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDImageCacheDefine.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageCachesManager.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDImageCachesManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageCoder.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDImageCoder.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageCoderHelper.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDImageCoderHelper.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageCodersManager.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDImageCodersManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageFrame.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDImageFrame.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageGIFCoder.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDImageGIFCoder.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageGraphics.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDImageGraphics.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageIOCoder.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDImageIOCoder.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageLoader.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDImageLoader.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageLoadersManager.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDImageLoadersManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageTransformer.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDImageTransformer.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDMemoryCache.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDMemoryCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImage-Swift.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Headers/SDWebImage-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImage-umbrella.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/Target Support Files/SDWebImage/SDWebImage-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImage.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/WebImage/SDWebImage.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageCacheKeyFilter.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDWebImageCacheKeyFilter.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageCacheSerializer.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDWebImageCacheSerializer.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageCompat.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDWebImageCompat.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageDefine.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDWebImageDefine.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageDownloader.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDWebImageDownloader.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageDownloaderConfig.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDWebImageDownloaderConfig.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageDownloaderOperation.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDWebImageDownloaderOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageDownloaderRequestModifier.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDWebImageDownloaderRequestModifier.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageError.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDWebImageError.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageIndicator.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDWebImageIndicator.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageManager.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDWebImageManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageOperation.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDWebImageOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageOptionsProcessor.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDWebImageOptionsProcessor.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImagePrefetcher.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDWebImagePrefetcher.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWebImageTransition.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/SDWebImageTransition.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIButton+WebCache.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/UIButton+WebCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+ForceDecode.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/UIImage+ForceDecode.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+GIF.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/UIImage+GIF.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+MemoryCacheCost.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/UIImage+MemoryCacheCost.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+Metadata.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/UIImage+Metadata.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+MultiFormat.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/UIImage+MultiFormat.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImage+Transform.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/UIImage+Transform.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImageView+HighlightedWebCache.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/UIImageView+HighlightedWebCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIImageView+WebCache.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/UIImageView+WebCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIView+WebCache.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/UIView+WebCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIView+WebCacheOperation.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Core/UIView+WebCacheOperation.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/SDWebImage.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/SDWebImage/SDWebImage.framework/PrivateHeaders",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "NSBezierPath+RoundedCorners.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Private/NSBezierPath+RoundedCorners.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDAsyncBlockOperation.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Private/SDAsyncBlockOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageAPNGCoderInternal.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Private/SDImageAPNGCoderInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageAssetManager.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Private/SDImageAssetManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageCachesManagerOperation.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Private/SDImageCachesManagerOperation.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDImageGIFCoderInternal.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Private/SDImageGIFCoderInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDInternalMacros.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Private/SDInternalMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDWeakProxy.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Private/SDWeakProxy.h"
+        },
+        {
+          'type': 'file',
+          'name': "SDmetamacros.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Private/SDmetamacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIColor+HexString.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/SDWebImage/SDWebImage/Private/UIColor+HexString.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/ZFPlayer/ZFPlayer.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "UIImageView+ZFCache.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/ControlView/UIImageView+ZFCache.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIScrollView+ZFPlayer.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/Core/UIScrollView+ZFPlayer.h"
+        },
+        {
+          'type': 'file',
+          'name': "UIView+ZFFrame.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/ControlView/UIView+ZFFrame.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFAVPlayerManager.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/AVPlayer/ZFAVPlayerManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFFloatView.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/Core/ZFFloatView.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFKVOController.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/Core/ZFKVOController.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFLandScapeControlView.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/ControlView/ZFLandScapeControlView.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFLoadingView.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/ControlView/ZFLoadingView.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFNetworkSpeedMonitor.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/ControlView/ZFNetworkSpeedMonitor.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFOrientationObserver.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/Core/ZFOrientationObserver.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFPlayer-Swift.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/ZFPlayer/ZFPlayer.framework/Headers/ZFPlayer-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFPlayer-umbrella.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/Target Support Files/ZFPlayer/ZFPlayer-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFPlayer.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/Core/ZFPlayer.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFPlayerControlView.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/ControlView/ZFPlayerControlView.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFPlayerController.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/Core/ZFPlayerController.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFPlayerGestureControl.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/Core/ZFPlayerGestureControl.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFPlayerLogManager.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/Core/ZFPlayerLogManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFPlayerMediaControl.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/Core/ZFPlayerMediaControl.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFPlayerMediaPlayback.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/Core/ZFPlayerMediaPlayback.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFPlayerNotification.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/Core/ZFPlayerNotification.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFPlayerView.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/Core/ZFPlayerView.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFPortraitControlView.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/ControlView/ZFPortraitControlView.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFReachabilityManager.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/Core/ZFReachabilityManager.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFSliderView.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/ControlView/ZFSliderView.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFSmallFloatControlView.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/ControlView/ZFSmallFloatControlView.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFSpeedLoadingView.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/ControlView/ZFSpeedLoadingView.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFUtilities.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/ControlView/ZFUtilities.h"
+        },
+        {
+          'type': 'file',
+          'name': "ZFVolumeBrightnessView.h",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Pods/ZFPlayer/ZFPlayer/Classes/ControlView/ZFVolumeBrightnessView.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Products/Debug-iphonesimulator/ZFPlayer/ZFPlayer.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/jamfer/Desktop/\u5B66\u4E60\u7C7B/JAFPlayerDemo/Build/Intermediates.noindex/Pods.build/Debug-iphonesimulator/ZFPlayer.build/module.modulemap"
+        }
+      ]
+    }
+  ]
+}
